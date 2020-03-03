@@ -63,6 +63,11 @@ body {
     background: green;
     color: #f1f1f1;
 }
+
+.year_btn::selection{
+    background: green;
+    color: #f1f1f1;
+}
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
     color: #f1f1f1;
@@ -112,11 +117,10 @@ body {
 
 .overlay-viz {
     position: absolute;
-    min-height: 84%;
+    min-height: 500px;
     min-width: 100%;
     left: 0;
     top: 0;
-    bottom: 20%;
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -161,13 +165,13 @@ body {
 .winner{
     position: absolute;
     top: 250px;
-    right: 30%;
+    right: 380px;
 }
 
 .winner-txt {
     position: absolute;
     top: 400px;
-    right: 35%;
+    right: 425px;
     font-weight: bolder;
     color: white;
     align-content: center;
@@ -177,7 +181,7 @@ body {
 .results {
     position: absolute;
     top: 420px;
-    right: 35%;
+    right: 455px;
     font-weight: bolder;
     color: white;
     font-size: larger;
@@ -197,17 +201,17 @@ body {
 
 .scroll-area {
     position: absolute;
-    top: 84%;
-    left: 52%;
+    top: 500px;
+    right: 455px;
     /*transform: translate(-50%, -50%);*/
 }
 
 .chart{
-    font: 12px "Arial";
+    font: 14px "Arial";
     font-weight: bold;
     position: absolute;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 .axis path,
 .axis line {
