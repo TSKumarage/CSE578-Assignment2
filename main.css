@@ -162,26 +162,52 @@ body {
     right: 16px;
 }
 
+/*.winner{*/
+/*    position: absolute;*/
+/*    top: 250px;*/
+/*    right: 380px;*/
+/*}*/
+
+/*.winner-txt {*/
+/*    position: absolute;*/
+/*    top: 400px;*/
+/*    right: 425px;*/
+/*    font-weight: bolder;*/
+/*    color: white;*/
+/*    align-content: center;*/
+/*    !*transform: translate(-50%, -50%);*!*/
+/*}*/
+/*!* Centered text *!*/
+/*.results {*/
+/*    position: absolute;*/
+/*    top: 420px;*/
+/*    right: 455px;*/
+/*    font-weight: bolder;*/
+/*    color: white;*/
+/*    font-size: larger;*/
+/*    align-content: center;*/
+/*    !*transform: translate(-50%, -50%);*!*/
+/*}*/
 .winner{
     position: absolute;
     top: 250px;
-    right: 380px;
+    left: 45%;
 }
 
 .winner-txt {
     position: absolute;
-    top: 400px;
-    right: 425px;
+    top: 410px;
+    left: 57%;
     font-weight: bolder;
     color: white;
     align-content: center;
-    /*transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
 }
 /* Centered text */
 .results {
     position: absolute;
     top: 420px;
-    right: 455px;
+    left: 50%;
     font-weight: bolder;
     color: white;
     font-size: larger;
@@ -191,6 +217,8 @@ body {
 
 .winner-container{
     align-content: center;
+    margin-left: 200px;
+    left: 70%;
 }
 .vs {
     position: absolute;
