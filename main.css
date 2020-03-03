@@ -1,0 +1,250 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+.description h1 {
+    color: #6ab446;
+}
+.description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.year_btn{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.year_btn:hover {
+    background: green;
+    color: #f1f1f1;
+}
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.header {
+    background-image: url('images/australian_open_tennis_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay-viz {
+    position: absolute;
+    min-height: 84%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 20%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.court img {
+    width:100%;
+    height: 500px;
+}
+
+/* Top left text */
+.player1 {
+    margin-left: 200px;
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: white;
+}
+
+.player1-img {
+    margin-left: 200px;
+    position: absolute;
+    top: 50px;
+    left: 16px;
+}
+
+/* Top right text */
+.player2 {
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    color: white;
+}
+
+/* Top right text */
+.player2-img {
+    position: absolute;
+    top: 50px;
+    right: 16px;
+}
+
+.winner{
+    position: absolute;
+    top: 250px;
+    right: 30%;
+}
+
+.winner-txt {
+    position: absolute;
+    top: 400px;
+    right: 35%;
+    font-weight: bolder;
+    color: white;
+    align-content: center;
+    /*transform: translate(-50%, -50%);*/
+}
+/* Centered text */
+.results {
+    position: absolute;
+    top: 420px;
+    right: 35%;
+    font-weight: bolder;
+    color: white;
+    font-size: larger;
+    align-content: center;
+    /*transform: translate(-50%, -50%);*/
+}
+
+.winner-container{
+    align-content: center;
+}
+.vs {
+    position: absolute;
+    top: 50px;
+    left: 45%;
+    /*transform: translate(-50%, -50%);*/
+}
+
+.scroll-area {
+    position: absolute;
+    top: 84%;
+    left: 52%;
+    /*transform: translate(-50%, -50%);*/
+}
+
+.chart{
+    font: 12px "Arial";
+    font-weight: bold;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}

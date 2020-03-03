@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.4.1.js"></script>
+    <script src="bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>-->
+
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
+    <!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .header {
+            background-image: url('images/home_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="sidenav">
+<!--    <a href="index.html">About</a>-->
+<!--    <a href="#contact">Contact</a>-->
+    <button class="dropdown-btn">Select a Year
+        <i class="fa fa-caret-down" ></i>
+    </button>
+    <div class="dropdown-container" id="year">
+        <button class="year_btn" id="1" >2004</button>
+        <button class="year_btn" id="2" >2005</button>
+        <button class="year_btn" id="3" >2006</button>
+        <button class="year_btn" id="4" >2007</button>
+        <button class="year_btn" id="5" >2008</button>
+        <button class="year_btn" id="6" >2009</button>
+        <button class="year_btn" id="7" >2010</button>
+        <button class="year_btn" id="8" >2011</button>
+        <button class="year_btn" id="9" >2012</button>
+        <button class="year_btn" id="10" >2013</button>
+        <button class="year_btn" id="11" >2014</button>
+    </div>
+</div>
+
+
+<div class="main" id="main">
+    <div class="court" id="court">
+        <img src="images/CourtFinal1.jpg" class="img-rounded" alt="Cinque Terre">
+        <div class="overlay-viz"></div>
+        <div class="player1-container" id="player1cont">
+            <div class="player1" id="player1"></div>
+            <div class="player1-img" id="player1-img"></div>
+        </div>
+        <div class="vs" id="vs"></div>
+
+        <div class="player2-container" id="player2cont">
+            <div class="player2" id="player2"></div>
+            <div class="player2-img" id="player2-img"></div>
+        </div>
+
+        <div class="winner-container" id="winner-cont">
+            <div class="winner" id="winner"></div>
+            <div class="winner-txt" id="winner-txt"></div>
+            <div class="results" id="results"> </div>
+        </div>
+
+    </div>
+    <div class="scroll-area" id="scroll-area">
+        <a class="ct-btn-scroll ct-js-btn-scroll" id="scroll" href="#chart" style="left: 45%" ><img alt="Arrow Down Icon" src="http://www.fava.it/images/site_images/scrollDown.gif"></a>
+    </div>
+
+    <div class="chart" id="chart"></div>
+
+</div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
